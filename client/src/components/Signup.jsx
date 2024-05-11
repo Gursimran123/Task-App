@@ -17,7 +17,7 @@ const Signup = () => {
     const handleSubmit = async (e)=>{
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:4000/api/register`,{
+            const response = await fetch(`https://task-app-api-two.vercel.app/api/register`,{
                 method:'POST',
                 headers: {
                     'Content-Type':'application/json'
