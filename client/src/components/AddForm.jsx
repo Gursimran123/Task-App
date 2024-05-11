@@ -14,7 +14,7 @@ const AddForm = ({ isOpen, onClose }) => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:4000/api/task", {
+      const response = await fetch("https://task-app-api-two.vercel.app/api/task", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
