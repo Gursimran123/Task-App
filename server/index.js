@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin:["https://task-app-frontend-mu.vercel.app/"],
+    origin:["https://task-app-frontend-mu.vercel.app"],
     methods:['POST','GET','PUT','DELETE'],
     credentials:true
   }
