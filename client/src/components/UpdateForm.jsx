@@ -14,7 +14,7 @@ const UpdateForm = ({ isOpen, onClose, task }) => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:4000/api/task/${task._id}`, {
+      const response = await fetch(`https://task-app-api-two.vercel.app/api/task/${task._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
