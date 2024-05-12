@@ -9,7 +9,11 @@ mongoConnect();
 const port = process.env.PORT || 4000;
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://task-app-client-omega.vercel.app',
+  methods: ['POST', 'GET', 'PUT', 'DELETE'],
+  credentials: true // if needed
+}));
 app.use(express.json());
 
 //route functionality
