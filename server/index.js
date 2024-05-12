@@ -12,7 +12,7 @@ const app = express();
 app.use(cors({
   origin: 'https://task-app-client-omega.vercel.app',
   methods: ['POST', 'GET', 'PUT', 'DELETE'],
-  credentials: true // if needed
+  credentials: true 
 }));
 app.use(express.json());
 
