@@ -13,7 +13,7 @@ const Task = () => {
   const fetchTasks = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://task-app-api-two.vercel.app/api", {
+      const response = await fetch("http://localhost:4000/api", {
         method: "GET",
         headers: {
           token: `${token}`,
@@ -38,7 +38,7 @@ const Task = () => {
   const handleDelete = async (taskId) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`https://task-app-api-two.vercel.app/api/task/${taskId}`, {
+      const response = await fetch(`http://localhost:4000/api/task/${taskId}`, {
         method: "DELETE",
         headers: {
           token: `${token}`,
