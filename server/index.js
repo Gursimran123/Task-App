@@ -21,7 +21,6 @@ app.use("/api", taskRoutes);
 app.use("/api", userRoutes);
 
 app.get("/", (req, res) => {
-  res.header("Access-Control-Allow-Origin", "https://task-app-client-omega.vercel.app");
   res.send("Hello Developers!");
 });
 
