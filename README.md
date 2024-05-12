@@ -24,6 +24,8 @@ The backend of the task management app is built using Node.js with Express. It p
 2. server/controllers: Contains controller functions to handle business logic for tasks and users.
 3. server/models: Defines Mongoose schemas for tasks and users, which are used to interact with MongoDB.
 4. server/db.js: Sets up the connection to the MongoDB database using Mongoose.
+5. .env file: it includes the secret related to jwt token, port i.e. 4000 and my mongodb_uri (you can use your own) for connection to mongodb database
+6. .gitignore file: it includes the .env file
 
 # Functionality
 
