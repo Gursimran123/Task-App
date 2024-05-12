@@ -8,7 +8,7 @@ const TaskDetails = () => {
     const fetchTaskDetails = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch(`https://task-app-api-two.vercel.app/task/${id}`, {
+        const response = await fetch(`http://localhost:4000/task/${id}`, {
           method: "GET",
           headers: {
             token: `${token}`,
